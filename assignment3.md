@@ -3,23 +3,23 @@
 
  if any variable is made as constant, using const keyword, you cannot change its value. Also, the constant variables must be initialized while they are declared.
 
- example
- (
+ example:
+  (
 	const int x = 10;
 	x= 5;    //compile erorr
 	x++;    //compile error
- )
+  )
 
 2- Pointers with const keyword:
 
  Pointers can be declared using const keyword . 
  When we use const with pointers, we can do it in two ways, either we can apply const to what the pointer is pointing to, or we can make the pointer itself a constant.
 
- example
- (
+ example:
+  (
 	const int* x;     //the pointer is pointing to a const variable.
 	int const* y;    //another way of declaration
- ) 
+  ) 
 
 3-const Pointer:
 
@@ -78,10 +78,10 @@
 	
 	When an object is declared or created using the const keyword, its data members can never be changed, during the object's lifetime.
 
-	example
-	(
-		const class_name object;
-	)
+	example:
+	 (
+	 	const class_name object;
+	 )
 
 	
 
@@ -95,20 +95,20 @@ examples of the usage of & operator:
 1-Printing Variable Addresses:
 
  example:
- (
+  (
 	 int x = 3;
 	 cout << "Address of x in the memory is: "<< &x << endl; 
- )
+  )
 	
 
 2-Assigning Addresses to Pointers:
  
  example:
- (
+  (
 	 int* pointVar, var;
      var = 5;
 
      // assign address of var to pointVar pointer
      pointVar = &var;
- )
+  )
 
