@@ -38,7 +38,7 @@
  We can make the return type or arguments of a function as const. Then we cannot change any of them.
 
  example:
- 
+ (
 	void f(const int i)
  {
     i++;    // compile error
@@ -48,6 +48,7 @@
  {
      return 1;
   }
+ )
  
 5-Defining Class Data members as const:
 	
@@ -55,7 +56,7 @@
  They are not initialized during declaration. Their initialization is done in the constructor.
 
 	example:
-
+	(
 	 class Test
 	 {
       const int i;
@@ -71,6 +72,7 @@
       Test t(10);
       Test s(20);
 	 }
+	)
 
 6-Defining Class Object as const:
 	
